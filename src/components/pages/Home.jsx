@@ -16,6 +16,7 @@ import { dbApp, wallet } from "../../utils/db";
 import { client } from "../../utils/Middleware";
 import { FaRegSadTear } from "react-icons/fa";
 import { FcDonate } from "react-icons/fc";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Home() {
   // const address = useAddress();
@@ -24,6 +25,7 @@ function Home() {
   const [reqAddress, setReqAddress] = useState("");
   const [doAmount, setDoAmount] = useState("");
   const [popUpstage, setPopUpstage] = useState(0);
+  const [captchaVerified, setCaptchaVerified] = useState(false);
   //  DB
   const db = getDatabase();
   useEffect(() => {
@@ -34,6 +36,15 @@ function Home() {
       setConnectedAddr(null);
     }
   }, [account]);
+
+  const handleCaptchaChange = (value) => {
+    console.log("Captcha value:", value);
+    if (value) {
+      setCaptchaVerified(true); // Captcha is verified
+    } else {
+      setCaptchaVerified(false); // Captcha is not verified
+    }
+  };
 
   const donateEth = async (e) => {
     e.preventDefault();
@@ -75,7 +86,7 @@ function Home() {
     try {
       let amount;
       let recipientAddress;
-      if (reqAddress !== "") {
+      if (reqAddress !== "" && captchaVerified) {
         setPopUpstage(1);
         if (reqAddress.toString().includes("base")) {
           console.log("base");
@@ -202,6 +213,10 @@ nuelyoungtech.base.eth
                 setReqAddress(e.target.value);
               }}
               value={reqAddress}
+            />
+            <ReCAPTCHA
+              sitekey={import.meta.env.VITE_Site_Key} // Replace with your site key from Google reCAPTCHA
+              onChange={handleCaptchaChange}
             />
             <button>Claim</button>
           </form>

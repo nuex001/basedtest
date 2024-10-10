@@ -188,7 +188,7 @@ nuelyoungtech.base.eth
             To receive drips, please enter your wallet address in the provided
             box and click on the "Claim" button to initiate the process, You can
             claim. Start exploring the endless possibilities of Web3 with our
-            powerful faucet! Please note that only one claim per 24 hours is
+            powerful faucet! Please note that only one claim per 4 hours is
             permitted!
           </p>
           <p>

@@ -12,7 +12,7 @@ function Header() {
       <div className="text">
         <h1>Get Base Testnet Tokens</h1>
         <p>
-          Request testnet Base tokens for the Base testnet and test Your Dapps
+          Request Base testnet tokens and test Your Dapps. Build the next Future
         </p>
         <p>Also contribute and Drive points for future Dapps</p>
       </div>

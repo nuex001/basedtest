@@ -1,0 +1,335 @@
+.home {
+  width: 100%;
+  height: auto;
+  color: var(--text);
+}
+.home header {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-image: url("./basebg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0em 4em;
+  padding-bottom: 2em;
+  /* border: 2px solid var(--text); */
+}
+
+.home header .text {
+  width: 45%;
+  height: auto;
+}
+.home header .text h1 {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 5em;
+  line-height: 1.1em;
+  color: var(--primary);
+}
+.home header .text p {
+  color: var(--bg);
+  font-size: 1.4em;
+  margin: 1em 0em;
+}
+.home header button {
+  display: none;
+}
+
+/* MAIN */
+.home main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6em;
+  padding: 0em 4em;
+}
+
+.home main .tokensBox {
+  width: 50%;
+  height: 500px;
+  padding-top: 4em;
+  /* border: 2px solid var(--text); */
+}
+.home main .tokensBox h2 {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 2em;
+  margin: 0em 0em;
+  color: var(--primary);
+}
+.home main .tokensBox h3 {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 1.2em;
+  margin: 0.5em 0em;
+  color: var(--primary);
+}
+.home main .tokensBox p {
+  font-size: 1em;
+  line-height: 25px;
+  margin: 1em 0em;
+}
+.home main .tokensBox p span {
+  font-size: 1.4em;
+  font-weight: 600;
+  font-family: "Afacad Flux", sans-serif;
+  color: var(--primary);
+}
+
+.home main .tokensBox form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 200px;
+  gap: 3em;
+  margin-top: 1em;
+}
+.home main .tokensBox form input {
+  width: 100%;
+  height: 50px;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 1.2em;
+  padding: 0em 1em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--text);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.home main .tokensBox form button {
+  width: 100%;
+  height: 50px;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 1.4em;
+  padding: 0em 1em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--bg);
+  background: var(--primary);
+  cursor: pointer;
+}
+/*  */
+
+.home main .supportBox {
+  width: 40%;
+  height: 500px;
+  padding-top: 4em;
+  /* border: 2px solid var(--text); */
+}
+.home main .supportBox h2 {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 2em;
+  margin: 0em 0em;
+  color: var(--primary);
+}
+.home main .supportBox p {
+  font-size: 1em;
+  line-height: 25px;
+  margin: 1em 0em;
+}
+.home main .supportBox img {
+  display: block;
+  object-fit: contain;
+  height: 300px;
+  margin: 1em auto;
+  margin-top: 2em;
+}
+
+.home main .supportBox form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 200px;
+  gap: 3em;
+  margin-top: 1em;
+}
+.home main .supportBox form input {
+  width: 100%;
+  height: 50px;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 1.2em;
+  padding: 0em 1em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--text);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.home main .supportBox form button {
+  width: 100%;
+  height: 50px;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 1.4em;
+  padding: 0em 1em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--bg);
+  background: var(--primary);
+  cursor: pointer;
+}
+
+/* overlay */
+.home .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0%;
+  left: 0%;
+  background: rgba(100, 100, 111, 0.02);
+}
+.home .overlay .popUpbox {
+  width: 300px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--bg);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.home .overlay .loader {
+  width: 50px;
+  aspect-ratio: 1;
+  --c: linear-gradient(#2b56ec 0 0);
+  --m: radial-gradient(farthest-side, #2b56ec 92%, #0000);
+  background: var(--c), var(--m), var(--c), var(--m), var(--c), var(--m);
+  background-size: 8px 25px, 8px 8px;
+  background-repeat: no-repeat;
+  animation: l15 2s infinite;
+}
+@keyframes l15 {
+  0% {
+    background-position: 0 0, 0 100%, 50% 0, 50% 100%, 100% 0, 100% 100%;
+  }
+  11.11% {
+    background-position: 0 calc(100% - 8px), 0 100%, 50% 0, 50% 100%, 100% 0,
+      100% 100%;
+  }
+  22.22% {
+    background-position: 0 calc(100% - 8px), 0 100%, 50% calc(100% - 8px),
+      50% 100%, 100% 0, 100% 100%;
+  }
+  33.33% {
+    background-position: 0 calc(100% - 8px), 0 100%, 50% calc(100% - 8px),
+      50% 100%, 100% calc(100% - 8px), 100% 100%;
+  }
+  44.44% {
+    background-position: 0 0, 0 15px, 50% calc(100% - 8px), 50% 100%,
+      100% calc(100% - 8px), 100% 100%;
+  }
+  55.55% {
+    background-position: 0 0, 0 15px, 50% 0, 50% 15px, 100% calc(100% - 8px),
+      100% 100%;
+  }
+  66.66% {
+    background-position: 0 0, 0 15px, 50% 0, 50% 15px, 100% 0, 100% 15px;
+  }
+  77.77% {
+    background-position: 0 0, 0 100%, 50% 0, 50% 15px, 100% 0, 100% 15px;
+  }
+  88.88% {
+    background-position: 0 0, 0 100%, 50% 0, 50% 100%, 100% 0, 100% 15px;
+  }
+  100% {
+    background-position: 0 0, 0 100%, 50% 0, 50% 100%, 100% 0, 100% 100%;
+  }
+}
+
+.home .overlay .box {
+  width: 100%;
+  height: 100%;
+  padding: 2em 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.home .overlay .box h1 {
+  font-size: 1.4em;
+  color: var(--primary);
+  text-align: center;
+}
+.home .overlay .box .icon {
+  font-size: 6em;
+  color: var(--primary);
+  text-align: center;
+}
+.home .overlay .box p {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--text);
+  margin: 1em 0em;
+}
+.home .overlay .box button {
+  width: 100%;
+  height: 40px;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 1.2em;
+  padding: 0em 1em;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--bg);
+  background: var(--primary);
+  cursor: pointer;
+}
+
+/* ************MEDIA QUERRY********************** */
+
+/* ********@MOBILE********* */
+
+@media (max-width: 767px) {
+  .home header {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 1em;
+  }
+
+  .home header .text {
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+  }
+  .home header .text h1 {
+    font-size: 2.5em;
+  }
+  .home header .text p {
+    font-size: 1em;
+  }
+  .home header button {
+    display: block;
+    font-family: "Afacad Flux", sans-serif;
+    color: var(--bg);
+    background: var(--primary);
+    margin-top: 1em;
+  }
+
+  /*  */
+
+  /* MAIN */
+  .home main {
+    flex-direction: column;
+    padding: 0em 1em;
+  }
+
+  .home main .tokensBox {
+    width: 100%;
+  }
+
+  .home main .supportBox {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}

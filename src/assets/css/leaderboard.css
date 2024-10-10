@@ -1,0 +1,224 @@
+.leaderboard {
+  width: 100%;
+  height: auto;
+  color: var(--text);
+}
+
+.leaderboard header {
+  width: 100%;
+  height: calc(100vh - 8em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #be93c5;
+  /* fallback for old browsers */
+  background: var(--bg);
+  /* background: linear-gradient(to right, #000, #2b56ec); */
+}
+.leaderboard h1 {
+  color: var(--text);
+  font-size: 10em;
+  font-family: "Afacad Flux", sans-serif;
+  padding-right: 1em;
+}
+.leaderboard h1 div.space {
+  padding: 0em 0.2em;
+}
+@keyframes example-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(9px);
+    opacity: 0.0625;
+  }
+}
+@keyframes example-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.125;
+  }
+}
+@keyframes example-3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(11px);
+    opacity: 0.1875;
+  }
+}
+@keyframes example-4 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+    opacity: 0.25;
+  }
+}
+@keyframes example-5 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(13px);
+    opacity: 0.3125;
+  }
+}
+@keyframes example-6 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(14px);
+    opacity: 0.375;
+  }
+}
+@keyframes example-7 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+    opacity: 0.4375;
+  }
+}
+@keyframes example-8 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(16px);
+    opacity: 0.5;
+  }
+}
+@keyframes example-9 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(17px);
+    opacity: 0.5625;
+  }
+}
+@keyframes example-10 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(18px);
+    opacity: 0.625;
+  }
+}
+@keyframes example-11 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(19px);
+    opacity: 0.6875;
+  }
+}
+.leaderboard h1 div:nth-child(1) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+.leaderboard h1 div:nth-child(2) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+.leaderboard h1 div:nth-child(3) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.6s;
+  animation-timing-function: ease-in-out;
+}
+.leaderboard h1 div:nth-child(4) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-4;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.8s;
+  animation-timing-function: ease-in-out;
+}
+.leaderboard h1 div:nth-child(5) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-5;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+}
+.leaderboard h1 div:nth-child(6) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-6;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.2s;
+  animation-timing-function: ease-in-out;
+}
+.leaderboard h1 div:nth-child(7) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-7;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.4s;
+  animation-timing-function: ease-in-out;
+}
+.leaderboard h1 div:nth-child(8) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-8;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.6s;
+  animation-timing-function: ease-in-out;
+}
+.leaderboard h1 div:nth-child(9) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-9;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.8s;
+  animation-timing-function: ease-in-out;
+}
+.leaderboard h1 div:nth-child(10) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-10;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+}
+.leaderboard h1 div:nth-child(11) {
+  display: inline-block;
+  text-shadow: 2px 2px 3px #3d6366;
+  animation-name: example-11;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.2s;
+  animation-timing-function: ease-in-out;
+}

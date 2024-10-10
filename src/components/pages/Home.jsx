@@ -215,7 +215,7 @@ nuelyoungtech.base.eth
               value={reqAddress}
             />
             <ReCAPTCHA
-              sitekey={import.meta.env.VITE_Site_Key} // Replace with your site key from Google reCAPTCHA
+              sitekey="6Lfw3l0qAAAAAEpgy3-hO5Pt48ZwzmyS8eZFqO9A" // Replace with your site key from Google reCAPTCHA
               onChange={handleCaptchaChange}
             />
             <button>Claim</button>

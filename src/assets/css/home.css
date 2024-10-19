@@ -325,6 +325,7 @@
 
   .home main .tokensBox {
     width: 100%;
+    height: auto;
   }
 
   .home main .supportBox {

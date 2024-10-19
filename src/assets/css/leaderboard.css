@@ -15,6 +15,7 @@
   background: var(--bg);
   /* background: linear-gradient(to right, #000, #2b56ec); */
 }
+
 .leaderboard h1 {
   color: var(--text);
   font-size: 10em;
@@ -221,4 +222,13 @@
   animation-iteration-count: infinite;
   animation-delay: 2.2s;
   animation-timing-function: ease-in-out;
+}
+
+/* ********@MOBILE********* */
+
+@media (max-width: 767px) {
+  .leaderboard h1 {
+    font-size: 5em;
+    text-align: center;
+  }
 }

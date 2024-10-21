@@ -10,7 +10,7 @@ import {
 } from "thirdweb/extensions/ens";
 import { base } from "thirdweb/chains";
 import { GrTrophy } from "react-icons/gr";
-import { GiImpLaugh } from "react-icons/gi";
+import { GiEmptyHourglass, GiImpLaugh } from "react-icons/gi";
 import { getDatabase, ref, set, get } from "firebase/database";
 import { dbApp, wallet } from "../../utils/db";
 import { client } from "../../utils/Middleware";
@@ -174,8 +174,13 @@ function Home() {
         }
       }
     } catch (error) {
+      if (error.toString().includes("insufficient funds")) {
+        setPopUpstage(6); // Error stage
+      } else {
+        setPopUpstage(4); // Error stage
+      }
+
       console.error("Error processing request:", error);
-      setPopUpstage(4); // Error stage
     }
   };
 
@@ -271,12 +276,22 @@ nuelyoungtech.base.eth
                 <p>Please try again later</p>
                 <button onClick={closePopUp}>OK</button>
               </div>
+            ) : popUpstage === 5 ? (
+              <div className="box">
+                <FcDonate className="icon" />
+                <h1>Thanks for the donations</h1>
+                <p>Impossible is just a stroll away</p>
+                <button onClick={closePopUp}>OK</button>
+              </div>
             ) : (
-              popUpstage === 5 && (
+              popUpstage === 6 && (
                 <div className="box">
-                  <FcDonate className="icon" />
-                  <h1>Thanks for the donations</h1>
-                  <p>Impossible is just a stroll away</p>
+                  <GiEmptyHourglass className="icon" />
+                  <h1>Vault is Empty</h1>
+                  <p>
+                    Please try again later or you can spread the word for more
+                    donations
+                  </p>
                   <button onClick={closePopUp}>OK</button>
                 </div>
               )
